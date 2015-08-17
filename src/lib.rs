@@ -5,6 +5,8 @@
 #![allow(non_snake_case)]
 #![allow(non_upper_case_globals)]
 
+extern crate num;
+
 use std::path::{Path};
 use std::ffi::{OsStr};
 use std::os::unix::prelude::OsStrExt;

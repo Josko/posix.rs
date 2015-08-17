@@ -6,3 +6,6 @@ authors = [ "mahkoh" ]
 [lib]
 name = "posix"
 path = "src/lib.rs"
+
+[dependencies]
+num = "0.1.26"

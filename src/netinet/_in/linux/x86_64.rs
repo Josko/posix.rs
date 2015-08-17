@@ -1,4 +1,4 @@
-use std::num::Int;
+use super::super::super::super::num::{PrimInt};
 
 pub type in_port_t = u16;
 pub type in_addr_t = u32;
@@ -68,7 +68,7 @@ pub fn IN6_IS_ADDR_V4MAPPED(a: &in6_addr) -> bool {
 }
 
 pub fn IN6_IS_ADDR_V4COMPAT(a: &in6_addr) -> bool {
-    a.data[0] == 0 && a.data[1] == 0 && a.data[2] == 0 && Int::from_be(a.data[3]) > 1
+    a.data[0] == 0 && a.data[1] == 0 && a.data[2] == 0 && PrimInt::from_be(a.data[3]) > 1
 }
 
 pub fn IN6_IS_ADDR_MC_NODELOCAL(a: &in6_addr) -> bool {
