@@ -1,5 +1,5 @@
 #[repr(C)]
-#[derive(Copy)]
+#[derive(Copy,Clone)]
 pub struct utmpx {
     pub ut_type: ::short_t,
     pub ut_pid: ::sys::types::pid_t,

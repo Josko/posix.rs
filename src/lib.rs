@@ -86,7 +86,7 @@ pub mod wctype;
 pub mod wordexp;
 
 #[repr(u8)]
-#[derive(Copy)]
+#[derive(Copy,Clone)]
 pub enum void_t {
     __variant1,
     __variant2,

@@ -1,5 +1,5 @@
 #[repr(C)]
-#[derive(Copy)]
+#[derive(Copy,Clone)]
 pub struct group {
     pub gr_name: *mut ::schar_t,
     pub gr_passwd: *mut ::schar_t,

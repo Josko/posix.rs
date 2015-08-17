@@ -1,5 +1,5 @@
 #[repr(C)]
-#[derive(Copy)]
+#[derive(Copy,Clone)]
 pub struct utsname {
     pub sysname: [::char_t; 65usize],
     pub nodename: [::char_t; 65usize],
