@@ -1,3 +1,5 @@
+use std::u64;
+
 pub type rlim_t = ::ulong_t;
 
 #[repr(C)]
@@ -21,9 +23,9 @@ new!(rusage);
 pub const PRIO_PROCESS:    ::int_t = 0;
 pub const PRIO_PGRP:       ::int_t = 1;
 pub const PRIO_USER:       ::int_t = 2;
-pub const RLIM_INFINITY:   rlim_t = -1;
-pub const RLIM_SAVED_MAX:  rlim_t = -1;
-pub const RLIM_SAVED_CUR:  rlim_t = -1;
+pub const RLIM_INFINITY:   rlim_t = u64::MAX;
+pub const RLIM_SAVED_MAX:  rlim_t = u64::MAX;
+pub const RLIM_SAVED_CUR:  rlim_t = u64::MAX;
 pub const RUSAGE_SELF:     ::int_t = 0;
 pub const RUSAGE_CHILDREN: ::int_t = -1;
 pub const RLIMIT_CORE:     ::int_t = 4;

@@ -1,3 +1,5 @@
+use std::u64::{MAX};
+
 pub const AIO_PRIO_DELTA_MAX:            usize          = 20;
 pub const DELAYTIMER_MAX:                usize          = 2147483647;
 pub const HOST_NAME_MAX:                 usize          = 64;
@@ -42,6 +44,6 @@ pub const SHRT_MIN:                      ::short_t     = -32768;
 pub const SSIZE_MAX:                     ::ssize_t     = 9223372036854775807;
 pub const UCHAR_MAX:                     ::uchar_t     = 255;
 pub const UINT_MAX:                      ::uint_t      = 4294967295;
-pub const ULLONG_MAX:                    ::ulonglong_t = -1;
-pub const ULONG_MAX:                     ::ulong_t     = -1;
+pub const ULLONG_MAX:                    ::ulonglong_t = MAX;
+pub const ULONG_MAX:                     ::ulong_t     = MAX;
 pub const USHRT_MAX:                     ::ushort_t    = 65535;

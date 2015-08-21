@@ -1,3 +1,5 @@
+use std::usize;
+
 pub type sig_atomic_t = ::int_t;
 
 #[repr(C)]
@@ -217,7 +219,7 @@ pub fn SIG_DFL() -> extern fn(::int_t) {
 }
 
 pub fn SIG_ERR() -> extern fn(::int_t) {
-    unsafe { ::std::mem::transmute::<usize,_>(-1) }
+    unsafe { ::std::mem::transmute::<usize,_>(usize::MAX) }
 }
 
 pub fn SIG_IGN() -> extern fn(::int_t) {

@@ -1,3 +1,5 @@
+use std::u32;
+
 pub type wint_t = ::uint_t;
 pub type wctype_t = ::ulong_t;
 
@@ -9,4 +11,4 @@ pub struct mbstate_t {
 
 new!(mbstate_t);
 
-pub const WEOF: wint_t = -1;
+pub const WEOF: wint_t = u32::MAX;

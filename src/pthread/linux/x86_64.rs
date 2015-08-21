@@ -1,3 +1,5 @@
+use std::u8;
+
 pub const PTHREAD_BARRIER_SERIAL_THREAD: ::int_t = -1;
 pub const PTHREAD_CANCEL_ASYNCHRONOUS:   ::int_t = 1;
 pub const PTHREAD_CANCEL_ENABLE:         ::int_t = 0;
@@ -22,7 +24,7 @@ pub const PTHREAD_PROCESS_PRIVATE:       ::int_t = 0;
 pub const PTHREAD_SCOPE_PROCESS:         ::int_t = 1;
 pub const PTHREAD_SCOPE_SYSTEM:          ::int_t = 0;
 
-pub const PTHREAD_CANCELED: *mut ::void_t = -1 as *mut _;
+pub const PTHREAD_CANCELED: *mut ::void_t = u8::MAX as *mut _;
 
 pub fn PTHREAD_COND_INITIALIZER() -> ::sys::types::pthread_cond_t {
     unsafe { ::std::mem::zeroed() }
