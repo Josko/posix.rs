@@ -1,3 +1,4 @@
+#![feature(raw)]
 #![crate_name = "posix"]
 #![crate_type = "lib"]
 #![allow(non_camel_case_types)]
