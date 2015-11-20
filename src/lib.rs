@@ -8,7 +8,6 @@
 extern crate num;
 
 use std::path::{Path};
-use std::ffi::{OsStr};
 use std::os::unix::prelude::OsStrExt;
 
 pub use os::arch::{char_t, schar_t, uchar_t, short_t, ushort_t, int_t, uint_t, long_t};
