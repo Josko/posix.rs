@@ -90,7 +90,6 @@ pub struct mcontext_t {
 new!(mcontext_t);
 
 #[repr(C)]
-#[derive(Copy,Clone)]
 pub struct ucontext {
     pub uc_flags: ::ulong_t,
     pub uc_link: *mut ucontext,

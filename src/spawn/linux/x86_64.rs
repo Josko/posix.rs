@@ -1,5 +1,4 @@
 #[repr(C)]
-#[derive(Copy,Clone)]
 pub struct posix_spawnattr_t {
     _data: [u64; 42],
 }

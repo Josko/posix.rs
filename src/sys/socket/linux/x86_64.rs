@@ -21,7 +21,6 @@ impl ::AsMutSlice for sockaddr { }
 new!(sockaddr);
 
 #[repr(C)]
-#[derive(Copy,Clone)]
 pub struct sockaddr_storage {
     pub ss_family: sa_family_t,
     __ss_align: ::ulong_t,

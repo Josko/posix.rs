@@ -1,5 +1,4 @@
 #[repr(C)]
-#[derive(Copy,Clone)]
 pub struct dirent {
     pub d_ino: ::sys::types::ino_t,
     pub d_off: ::sys::types::off_t,
