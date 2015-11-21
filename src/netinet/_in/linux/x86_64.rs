@@ -44,11 +44,11 @@ impl ::AsSlice for in6_addr { }
 impl ::AsMutSlice for in6_addr { }
 
 pub fn IN6_IS_ADDR_UNSPECIFIED(a: &in6_addr) -> bool {
-    a.data.as_slice() == [0; 4].as_slice()
+    a.data == [0; 4]
 }
 
 pub fn IN6_IS_ADDR_LOOPBACK(a: &in6_addr) -> bool {
-    a.data.as_slice() == [0, 0, 0, 1u32.to_be()].as_slice()
+    a.data == [0, 0, 0, 1u32.to_be()]
 }
 
 pub fn IN6_IS_ADDR_MULTICAST(a: &in6_addr) -> bool {
